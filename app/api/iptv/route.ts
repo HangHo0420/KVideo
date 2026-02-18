@@ -3,11 +3,9 @@
  * Fetches M3U playlist files to avoid CORS issues
  */
 
-export const runtime = 'edge';
-
 import { NextRequest, NextResponse } from 'next/server';
 
-export const runtime = 'nodejs';
+export const runtime = 'edge';
 
 export async function GET(request: NextRequest) {
   const url = request.nextUrl.searchParams.get('url');
