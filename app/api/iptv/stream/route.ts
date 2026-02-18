@@ -4,6 +4,8 @@
  * For .m3u8 manifests, rewrites URLs to also route through this proxy.
  */
 
+export const runtime = 'edge';
+
 import { NextRequest, NextResponse } from 'next/server';
 
 export const runtime = 'nodejs';
